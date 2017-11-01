@@ -15,10 +15,13 @@ SHOULD NOT BE USED IN PRODUCTION.**
 
 # Project Listing
 
-- [epkgen](https://github.com/decred/dcrpayments/epkgen) - utility for generating an extended public key from a seed for use with php-addressgen/php-exampletestnetstore
-- [php-addressgen](https://github.com/decred/dcrpayments/php-addressgen) - [BIP-0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) address generation libary with Bitcoin/Decred support
-- [PHP_Blake](https://github.com/decred/dcrpayments/PHP_BLAKE) - PHP module that adds a 14 round BLAKE-256 hash function used by php-addressgen
-- [php-exampletestnetstore](https://github.com/decred/dcrpayments/php-exampletestnetstore) - end-to-end example of creating an order, presenting a Decred address for
+- [PHP_Blake](https://github.com/decred/dcrpayments/tree/master/PHP_Blake) - PHP
+  module that adds a 14 round BLAKE-256 hash function used by php-addressgen
+- [epkgen](https://github.com/decred/dcrpayments/tree/master/epkgen) - utility
+  for generating an extended public key from a seed for use with php-addressgen/php-exampletestnetstore
+- [php-addressgen](https://github.com/decred/dcrpayments/tree/master/php-addressgen) -
+[BIP-0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) address generation libary with Bitcoin/Decred support
+- [php-exampletestnetstore](https://github.com/decred/dcrpayments/tree/master/php-exampletestnetstore) - end-to-end example of creating an order, presenting a Decred address for
 payment, and polling block explorers to check whether a transaction which
 satisfies the payment requirement comes in.
 
