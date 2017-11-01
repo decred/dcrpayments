@@ -1,0 +1,11 @@
+Blake hash support
+Daniel Correa
+
+Blake 8 round
+BlueDragon747
+
+2017-08-24 Adapt For Decred (https://github.com/decred/dcrpayments/PHP_Blake)
+====
+- default to 14 rounds
+- drop file support
+- PHP7 support
