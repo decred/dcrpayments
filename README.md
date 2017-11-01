@@ -84,9 +84,8 @@ TODO
 If you have any further questions you can find us at:
 
 - irc.freenode.net (channel #decred-dev) ([webchat](https://webchat.freenode.net/?channels=decred-dev))
-- Sign up for [matrix](https://matrix.org/docs/projects/try-matrix-now.html) and
-  join #payments_integration:decred.org
-- [#payments_integration](https://riot.im/app/#/room/#payments_integration:decred.org)
+- [#payments_integration:decred.org](https://riot.im/app/#/room/#payments_integration:decred.org) on
+[matrix](https://matrix.org/docs/projects/try-matrix-now.html)
 - #payments_integration on slack (decred.slack.com)
   (**BROKEN AS OF Nov 1st, 2017.** Decred Slack is unable to add new users. 
   Existing users may still join the channel.)
