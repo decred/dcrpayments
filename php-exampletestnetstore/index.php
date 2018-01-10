@@ -16,11 +16,9 @@ $appCtx = array(
   "confirmationsRequired" => 2,
   "dbConn" => null,
   "dbFilename" => "exampleStoreV1.db",
-  // from cmd/printepk/printepk.go
-  // XXX this is cointype 20 not 42
-  "paymentEPK" => "tpubVs5Ln59WKEasvuDMxwMUrWjPHa6uuTyFZX3hZjnEnab428P4pKbeMbQCVgTHtXP3VEJQayVfzEriGSvFrQisxKPHJgMQErBQRAEYL78Buw2",
+  "paymentEPK" => "tpub...",
   "rootPath" => __DIR__ . DIRECTORY_SEPARATOR,
-  "storeName" => "Jolan's Testnet Store Example",
+  "storeName" => "Decred Testnet Store Example",
 );
 
 // verify specified EPK
@@ -151,7 +149,7 @@ if (!empty($_GET["cmd"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Decred testnet store">
-    <meta name="author" content="jolan">
+    <meta name="author" content="Decred Developers">
     <link rel="icon" href="./favicon.ico">
 
     <title><?php echo $appCtx["storeName"];?></title>
