@@ -16,8 +16,8 @@ Decred test network by using the [testnet faucet](https://faucet.decred.org).
 - [dcrpayd](https://github.com/decred/dcrpayments/tree/master/dcrpayd) -
   Microservice for serving addresses and price quotes.
 - [util](https://github.com/decred/dcrpayments/tree/master/util) - Utility
-library for deriving payment addresses and checking block explorers for
-completion of payments.
+library for deriving payment addresses and initiating payments with the testnet
+faucet.
 
 ## PHP Project Listing
 
@@ -39,7 +39,7 @@ be removed soon:
 
 The best way to begin is to see the [Getting Started](https://docs.decred.org/getting-started/beginner-guide/)
 guide and follow the "Command-Line Path" and "Testnet guide" instructions so you
-have dcrd/dcrwallet running on locally on testnet.  From there, create an
+have dcrd/dcrwallet running locally on testnet.  From there, create an
 account to test receiving payments:
 
 ```bash no-highlight
@@ -52,10 +52,11 @@ public key for this account returned as output.  This is used by dcrpayd and
 the example testnetstore to deterministically derive payment addresses from the
 account.  This lets the software use i.e. address #1 for order #1, address #2
 for order #2, and so on to prevent customers or competitors from seeing how many
-items have been sold and whatnot.  If master public key is ever obtained by a
-third party, they will **not** be able to spend your funds, however they will be
-able to see the addresses/balance of this account.  For this reason, it is best
-to have the "real" wallet disconnected from the actual payment infrastructure.
+orders have been placed and the amount(s) the wallet has received.  If the
+master public key is ever obtained by a third party, they will **not** be able
+to spend your funds, however they will be able to see the addresses/balance of
+this account.  For this reason, it is best to have the "real" wallet which
+contains private keys separated from the actual payment infrastructure.
 
 One quirk is that the wallet under normal operation for personal activity will
 use a [gap](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
@@ -73,8 +74,8 @@ index if you surpass 10,000 orders.
 
 ## Future Work
 
-Development will begin soon to provide integrations with popular/common
-e-commerce platforms such as
+Development will soon begin in earnest to provide integrations with
+popular/common e-commerce platforms such as
 Shopify, WooCommerce, Magento, WordPress E-Commerce, OScommerce,
 OpenCart, PrestaShop, XCart, Commerce:SEO, Gravity Forms, Zen Cart,
 Spree Commerce, Ubercart, Ecwid, Drupal Commerce, Membership Pro, Virtue Mart,
