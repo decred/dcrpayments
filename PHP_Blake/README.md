@@ -1,7 +1,6 @@
 PHP_Blake
 ====
-
-This is a PoC-quality development shim for doing 14 round BLAKE-256 in PHP7.
+PHP_Blake is a PHP7 module implementation of 14 round BLAKE-256 as used by Decred.
 
 # Building
 
@@ -20,13 +19,7 @@ This is a PoC-quality development shim for doing 14 round BLAKE-256 in PHP7.
 
 ```php -r "echo blake('123', BLAKE_256) . PHP_EOL;"```
 
-# Status
-
-- Tests crash due to the flaky PHP module bits. It does look like this module
-can be simplified and look more like https://github.com/strawbrary/php-blake2.
-A native PHP implementation would be interesting too.
-
 # History
 
 - Base code is from https://github.com/BlueDragon747/PHP_Blake
-- PHP7 and 14 round Decred support implemented by @jolan.
+- PHP7 support and conversion to 14 rounds implemented by the Decred developers.
